@@ -1,0 +1,55 @@
+<body>
+    <style>
+
+.animated-progress {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(189, 113, 113);
+  overflow: hidden;
+  position: relative;
+}
+
+.animated-progress span {
+  height: 100%;
+  width: 0;
+  color: rgb(255, 251, 251);
+  position: absolute;
+  text-align: end;
+  padding-right: 5px;
+}
+.progress-purple span {
+  background-color: indigo;
+}
+
+    </style>
+    <div style="display: flex;">
+        <div style="width: 20vw; height: 30vh; border: 1px black solid; float: left;">
+            <h1>
+                Frontend
+            </h1>
+            <h2>
+                Bonjour
+            </h2>
+        </div>
+        <div style="width: 20vw; height: 30vh; border: 1px black solid;">
+            <h1>
+                Backend
+            </h1>
+
+            <div>
+                <div style="display: flex; flex-wrap : wrap; justify-content: space-between ;">
+                    <div>
+                        HTML
+                    </div>
+                    <div style="margin-right: 30%;">
+                        50%
+                    </div>
+                </div>
+                <div class="animated-progress progress-purple">
+                  <span data-progress="70" style="width: 70%;"></span>
+                </div>
+            </div>
+
+        </div>
+</body>
